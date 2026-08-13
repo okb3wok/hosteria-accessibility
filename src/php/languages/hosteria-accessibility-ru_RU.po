@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hosteria Accessibility\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-13 05:52+0000\n"
+"PO-Revision-Date: 2026-08-13 05:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: Русский\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.8; wp-7.0.4; php-8.2.29\n"
+"X-Domain: hosteria-accessibility"
+
+#: hosteria-accessibility.php:136
+msgid "+ Larger"
+msgstr "+ Больше"
+
+#: hosteria-accessibility.php:33
+msgid "Accessibility version"
+msgstr "Версия для людей с ограниченными возможностями"
+
+#. Author of the plugin
+msgid "Alexander Dolzhenkov <okb3wok@yandex.ru>"
+msgstr "Александр Долженков <okb3wok@yandex.ru>"
+
+#: hosteria-accessibility.php:95
+msgid "Black"
+msgstr "Б"
+
+#: hosteria-accessibility.php:103
+msgid "Blue"
+msgstr "Г"
+
+#: hosteria-accessibility.php:111
+msgid "Brown"
+msgstr "К"
+
+#: hosteria-accessibility.php:70
+msgid "Color"
+msgstr "Цвет"
+
+#: hosteria-accessibility.php:63
+msgid "Color schemes and font"
+msgstr "Цветовые схемы, шрифт"
+
+#: hosteria-accessibility.php:144
+msgid "Font"
+msgstr "Шрифт"
+
+#: hosteria-accessibility.php:119
+msgid "Font size"
+msgstr "Размер"
+
+#. Name of the plugin
+msgid "Hosteria Accessibility"
+msgstr "Hosteria Accessibility"
+
+#. Author URI of the plugin
+msgid "https://hosteria.ru/"
+msgstr "https://hosteria.ru/"
+
+#. URI of the plugin
+msgid "https://wordpress.org/plugins/hosteria-accessibility/"
+msgstr "https://wordpress.org/plugins/hosteria-accessibility/"
+
+#: hosteria-accessibility.php:219
+msgid "Images"
+msgstr "Фото"
+
+#: hosteria-accessibility.php:178
+msgid "Less"
+msgstr "Меньше"
+
+#: hosteria-accessibility.php:169
+msgid "Letter spacing"
+msgstr "Кернинг"
+
+#: hosteria-accessibility.php:194
+msgid "Line spacing"
+msgstr "Интервал"
+
+#: hosteria-accessibility.php:186
+msgid "M o r e"
+msgstr "Б о л ь ш е"
+
+#. Description of the plugin
+msgid ""
+"Make your site accessible to visually impaired users: customize colors, text "
+"spacing, font sizes, and images."
+msgstr ""
+"Сделайте свой сайт доступным для пользователей с нарушениями зрения: "
+"настройте цвета, межстрочный интервал, размер шрифта и изображения."
+
+#: hosteria-accessibility.php:79
+msgid "Normal"
+msgstr "Норм"
+
+#: hosteria-accessibility.php:153
+msgid "Sans Serif"
+msgstr "Без засечек"
+
+#: hosteria-accessibility.php:161
+msgid "Serif"
+msgstr "С засечками"
+
+#: hosteria-accessibility.php:226 hosteria-accessibility.php:227
+msgid "Toggle images"
+msgstr "Убрать фото"
+
+#: hosteria-accessibility.php:87
+msgid "White"
+msgstr "Б"
+
+#: hosteria-accessibility.php:128
+msgid "− Smaller"
+msgstr "- Меньше"

@@ -1,0 +1,119 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Hosteria Accessibility\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-13 05:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.8; wp-7.0.4; php-8.2.29\n"
+"X-Domain: hosteria-accessibility"
+
+#: hosteria-accessibility.php:136
+msgid "+ Larger"
+msgstr ""
+
+#: hosteria-accessibility.php:33
+msgid "Accessibility version"
+msgstr ""
+
+#. Author of the plugin
+msgid "Alexander Dolzhenkov <okb3wok@yandex.ru>"
+msgstr ""
+
+#: hosteria-accessibility.php:95
+msgid "Black"
+msgstr ""
+
+#: hosteria-accessibility.php:103
+msgid "Blue"
+msgstr ""
+
+#: hosteria-accessibility.php:111
+msgid "Brown"
+msgstr ""
+
+#: hosteria-accessibility.php:70
+msgid "Color"
+msgstr ""
+
+#: hosteria-accessibility.php:63
+msgid "Color schemes and font"
+msgstr ""
+
+#: hosteria-accessibility.php:144
+msgid "Font"
+msgstr ""
+
+#: hosteria-accessibility.php:119
+msgid "Font size"
+msgstr ""
+
+#. Name of the plugin
+msgid "Hosteria Accessibility"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://hosteria.ru/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://wordpress.org/plugins/hosteria-accessibility/"
+msgstr ""
+
+#: hosteria-accessibility.php:219
+msgid "Images"
+msgstr ""
+
+#: hosteria-accessibility.php:178
+msgid "Less"
+msgstr ""
+
+#: hosteria-accessibility.php:169
+msgid "Letter spacing"
+msgstr ""
+
+#: hosteria-accessibility.php:194
+msgid "Line spacing"
+msgstr ""
+
+#: hosteria-accessibility.php:186
+msgid "M o r e"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Make your site accessible to visually impaired users: customize colors, text "
+"spacing, font sizes, and images."
+msgstr ""
+
+#: hosteria-accessibility.php:79
+msgid "Normal"
+msgstr ""
+
+#: hosteria-accessibility.php:153
+msgid "Sans Serif"
+msgstr ""
+
+#: hosteria-accessibility.php:161
+msgid "Serif"
+msgstr ""
+
+#: hosteria-accessibility.php:226 hosteria-accessibility.php:227
+msgid "Toggle images"
+msgstr ""
+
+#: hosteria-accessibility.php:87
+msgid "White"
+msgstr ""
+
+#: hosteria-accessibility.php:128
+msgid "− Smaller"
+msgstr ""

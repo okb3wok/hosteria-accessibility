@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.85, viewport-fit=cover">
+  <link rel="profile" href="https://gmpg.org/xfn/11">
+  <script>
+    let hosteriaLocalStorage = JSON.parse(localStorage.hosteria_v1_9 || '{"theme": "dark"}');
+    const theme = hosteriaLocalStorage.theme;
+    if (theme)
+    {
+      document.documentElement.setAttribute('theme', theme);
+    }
+    if (navigator.userAgent.indexOf("Firefox") > -1) {
+      document.getElementsByName('viewport')[0].content="width=device-width, initial-scale=0.85, viewport-fit=cover";
+    }
+  </script>
+  <title>Hosteria – Simple WP theme</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- hosteria Favicons -->
+
+  <link rel="icon" type="image/x-icon" href="https://dev.hosteria.ru/wp-content/uploads/hosteria-favicons/favicon.ico?ver=1786446129">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="https://dev.hosteria.ru/wp-content/uploads/hosteria-favicons/favicon-16x16.png?ver=1786446129">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="https://dev.hosteria.ru/wp-content/uploads/hosteria-favicons/favicon-32x32.png?ver=1786446129">
+
+  <link rel="icon" type="image/png" sizes="48x48" href="https://dev.hosteria.ru/wp-content/uploads/hosteria-favicons/favicon-48x48.png?ver=1786446129">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://dev.hosteria.ru/wp-content/uploads/hosteria-favicons/apple-touch-icon.png?ver=1786446129">
+
+  <link rel="manifest" href="https://dev.hosteria.ru/wp-content/uploads/hosteria-favicons/site.webmanifest?ver=1786446129">
+
+  <meta name="msapplication-TileImage" content="https://dev.hosteria.ru/wp-content/uploads/hosteria-favicons/mstile-150x150.png?ver=1786446129">
+
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="alternate" type="application/rss+xml" title="Hosteria » Feed" href="https://dev.hosteria.ru/feed/">
+  <link rel="alternate" type="application/rss+xml" title="Hosteria » Comments Feed" href="https://dev.hosteria.ru/comments/feed/">
+
+  <link rel="stylesheet" id="hosteria-css" href="https://dev.hosteria.ru/wp-content/themes/hosteria/assets/hosteria.css?ver=1.9" media="all">
+  <link rel="stylesheet" id="hstrmoga-swiper-lib-css" href="https://dev.hosteria.ru/wp-content/plugins/hosteria-modal-gallery/vendor/swiper-bundle.min.css?ver=14.0.0" media="all">
+  <link rel="stylesheet" id="hstrmoga-main-style-css" href="https://dev.hosteria.ru/wp-content/plugins/hosteria-modal-gallery/assets/hosteria-modal-gallery.css?ver=1.1" media="all">
+
+</head>
+<body class="home blog wp-embed-responsive wp-theme-hosteria hfeed">
+<div id="page" class="site">
+  <a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
+
+  <header id="masthead" class="hosteria-site-header">
+    <nav id="site-navigation" class="hosteria-main-navigation">
+      <div class="max-w-screen-xl px-4 mx-auto 2xl:px-0 py-4 relative">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-8">
+            <div class="hosteria-site-branding">
+
+              <h1 class="hosteria-site-title">
+
+                <a href="https://dev.hosteria.ru/" rel="home" class="flex items-center gap-3">
+
+                  <img src="https://dev.hosteria.ru/wp-content/themes/hosteria/assets/img/logo.png" alt="Hosteria" class="hosteria-site-logo">
+
+                  <div>
+                    <div class="hosteria-site-name">
+                      Hosteria                    </div>
+
+                    <div class="hosteria-site-description">
+                      Simple WP theme                      </div>
+                  </div>
+
+                </a>
+
+              </h1>
+            </div><!-- .site-branding -->
+            <div class="hosteria-nav-menu-container"><ul id="primary-menu" class="hosteria-nav-menu hidden lg:!flex"><li id="menu-item-1768" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1768"><a href="https://dev.hosteria.ru/blog/">a Blog page</a></li>
+              <li id="menu-item-1769" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1769"><a href="https://dev.hosteria.ru/front-page/">Front Page</a></li>
+              <li id="menu-item-1770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1770"><a href="https://dev.hosteria.ru/about/">About The Tests</a>
+                <ul class="sub-menu">
+                  <li id="menu-item-1824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1824"><a href="https://dev.hosteria.ru/about/page-image-alignment/">Page Image Alignment</a></li>
+                  <li id="menu-item-1825" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1825"><a href="https://dev.hosteria.ru/about/page-markup-and-formatting/">Page Markup And Formatting</a></li>
+                  <li id="menu-item-1771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1771"><a href="https://dev.hosteria.ru/about/clearing-floats/">Clearing Floats</a></li>
+                  <li id="menu-item-1772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1772"><a href="https://dev.hosteria.ru/about/page-with-comments/">Page with comments</a></li>
+                  <li id="menu-item-1773" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1773"><a href="https://dev.hosteria.ru/about/page-with-comments-disabled/">Page with comments disabled</a></li>
+                </ul>
+              </li>
+              <li id="menu-item-1774" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1774"><a href="https://dev.hosteria.ru/level-1/">Level 1</a>
+                <ul class="sub-menu">
+                  <li id="menu-item-1775" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1775"><a href="https://dev.hosteria.ru/level-1/level-2/">Level 2</a>
+                    <ul class="sub-menu">
+                      <li id="menu-item-1776" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1776"><a href="https://dev.hosteria.ru/level-1/level-2/level-3/">Level 3</a></li>
+                      <li id="menu-item-1826" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1826"><a href="https://dev.hosteria.ru/level-1/level-2/level-3a/">Level 3a</a></li>
+                      <li id="menu-item-1827" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1827"><a href="https://dev.hosteria.ru/level-1/level-2/level-3b/">Level 3b</a></li>
+                    </ul>
+                  </li>
+                  <li id="menu-item-1828" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1828"><a href="https://dev.hosteria.ru/level-1/level-2a/">Level 2a</a></li>
+                  <li id="menu-item-1829" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1829"><a href="https://dev.hosteria.ru/level-1/level-2b/">Level 2b</a></li>
+                </ul>
+              </li>
+              <li id="menu-item-1777" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1777"><a href="https://dev.hosteria.ru/lorem-ipsum/">Lorem Ipsum</a></li>
+              <li id="menu-item-1830" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1830"><a href="https://dev.hosteria.ru/page-a/">Page A</a></li>
+              <li id="menu-item-1831" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1831"><a href="https://dev.hosteria.ru/page-b/">Page B</a></li>
+            </ul></div>        </div>
+          <div class="flex items-center lg:space-x-2">
+
+
+            <button title="Switch theme" id="hosteria-change-theme-button" class="hosteria-header-button">
+              <div class="w-6 h-6 flex items-center justify-center">
+                <svg id="hosteria-icon-light" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 hidden"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+                <svg id="hosteria-icon-dark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+                <svg id="hosteria-icon-auto" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 hidden"><rect width="20" height="14" x="2" y="3" rx="2"></rect><path d="M8 21h8"></path><path d="M12 17v4"></path></svg>
+              </div>
+            </button>
+
+            <button title="Open search" id="hosteria-search-button" class="hosteria-header-button">
+              <svg fill="none" xmlns="http://www.w3.org/2000/svg" class="size-6 fill-gray-400 dark:fill-gray-500">
+                <path d="M20.47 21.53a.75.75 0 1 0 1.06-1.06l-1.06 1.06Zm-9.97-4.28a6.75 6.75 0 0 1-6.75-6.75h-1.5a8.25 8.25 0 0 0 8.25 8.25v-1.5ZM3.75 10.5a6.75 6.75 0 0 1 6.75-6.75v-1.5a8.25 8.25 0 0 0-8.25 8.25h1.5Zm6.75-6.75a6.75 6.75 0 0 1 6.75 6.75h1.5a8.25 8.25 0 0 0-8.25-8.25v1.5Zm11.03 16.72-5.196-5.197-1.061 1.06 5.197 5.197 1.06-1.06Zm-4.28-9.97c0 1.864-.755 3.55-1.977 4.773l1.06 1.06A8.226 8.226 0 0 0 18.75 10.5h-1.5Zm-1.977 4.773A6.727 6.727 0 0 1 10.5 17.25v1.5a8.226 8.226 0 0 0 5.834-2.416l-1.061-1.061Z"></path>
+              </svg>
+            </button>
+
+            <button title="Open the main menu" id="hosteria-menu-button" class="hosteria-header-button lg:!hidden flex" aria-controls="menu" aria-expanded="false">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+              <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+          </div>
+
+        </div>
+        <div class="hosteria-search-form hidden" id="hosteria-search-form">
+          <form role="search" method="get" action="https://dev.hosteria.ru/">
+            <div class="flex mt-2 gap-2 relative">
+              <label for="hosteria-search-input" class="hosteria-search-input-label">
+                <svg width="20" height="20" class="inline" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              </label>
+              <input type="search" name="s" id="hosteria-search-input" class="hosteria-search-input search-field" value="" autocomplete="off">
+              <button id="hosteria-search-submit-button" type="submit" class="hosteria-search-submit-button search-submit">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav><!-- #site-navigation -->
+  </header><!-- #masthead -->
+
+  <main id="primary" class="hosteria-site-main">
+
+    <div class="hosteria-site-main-wrapper">
+
+      <article id="post-1241" class="group post-1241 post type-post status-publish format-standard sticky hentry category-classic category-uncategorized tag-sticky-2 tag-template">
+
+
+        <a href="https://dev.hosteria.ru/2012/01/07/template-sticky/" class="block overflow-hidden rounded-lg" aria-hidden="true" tabindex="-1">
+          <img src="https://dev.hosteria.ru/wp-content/themes/hosteria/assets/img/no-image.jpg" alt="" class="w-full h-auto object-cover rounded-lg transition-transform duration-300" loading="lazy">
+        </a>
+
+
+        <header class="hosteria-entry-header">
+          <h2 class="text-2xl font-normal mx-0 mt-4 mb-3 ">
+            <a href="https://dev.hosteria.ru/2012/01/07/template-sticky/" class="no-underline text-gray-800 dark:text-gray-100 transition-colors">
+              Template: Sticky      </a>
+          </h2>
+
+          <div class="hosteria-entry-meta">
+            <span class="posted-on"><a href="https://dev.hosteria.ru/2012/01/07/template-sticky/" rel="bookmark"><time class="entry-date published" datetime="2012-01-07T07:07:21+03:00">07.01.2012</time></a></span>
+          </div><!-- .entry-meta -->
+
+        </header><!-- .entry-header -->
+
+
+
+        <div class="hosteria-entry-content">
+          <p>This is a sticky post. There are a few things to verify: The sticky post should be distinctly recognizable in some way in comparison to normal posts. You can style the .sticky class if you are using the post_class() function</p>
+          <div class="hosteria-entry-more"><a href="https://dev.hosteria.ru/2012/01/07/template-sticky/" class="no-underline font-light  group-hover:text-primary-800 dark:group-hover:text-primary-300 py-1">Read more &gt;&gt;&gt;</a></div>
+        </div><!-- .entry-content -->
+
+      </article><!-- #post-1241 -->
+
+
+
+
+      <article id="post-163" class="group post-163 post type-post status-publish format-standard hentry category-6-1 category-block">
+
+
+        <a href="https://dev.hosteria.ru/2023/01/16/wp-6-1-font-size-scale/" class="block overflow-hidden rounded-lg" aria-hidden="true" tabindex="-1">
+          <img src="https://dev.hosteria.ru/wp-content/themes/hosteria/assets/img/no-image.jpg" alt="" class="w-full h-auto object-cover rounded-lg transition-transform duration-300" loading="lazy">
+        </a>
+
+
+        <header class="hosteria-entry-header">
+          <h2 class="text-2xl font-normal mx-0 mt-4 mb-3 ">
+            <a href="https://dev.hosteria.ru/2023/01/16/wp-6-1-font-size-scale/" class="no-underline text-gray-800 dark:text-gray-100 transition-colors">
+              WP 6.1 Font size scale      </a>
+          </h2>
+
+          <div class="hosteria-entry-meta">
+            <span class="posted-on"><a href="https://dev.hosteria.ru/2023/01/16/wp-6-1-font-size-scale/" rel="bookmark"><time class="entry-date published" datetime="2023-01-16T07:08:31+03:00">16.01.2023</time></a></span>
+          </div><!-- .entry-meta -->
+
+        </header><!-- .entry-header -->
+
+
+
+        <div class="hosteria-entry-content">
+          <p>This test post was generated using the block theme Emptytheme in WordPress 6.1.1. Small H2 Heading Medium H2 Heading Large H2 Heading Extra Large H2 Heading Small paragraph Medium paragraph Large paragraph Extra Large paragraph</p>
+        </div><!-- .entry-content -->
+
+      </article><!-- #post-163 -->
+
+
+
+
+      <article id="post-150" class="group post-150 post type-post status-publish format-standard hentry category-6-1 category-block">
+
+
+        <a href="https://dev.hosteria.ru/2023/01/16/wp-6-1-spacing-presets/" class="block overflow-hidden rounded-lg" aria-hidden="true" tabindex="-1">
+          <img src="https://dev.hosteria.ru/wp-content/themes/hosteria/assets/img/no-image.jpg" alt="" class="w-full h-auto object-cover rounded-lg transition-transform duration-300" loading="lazy">
+        </a>
+
+
+        <header class="hosteria-entry-header">
+          <h2 class="text-2xl font-normal mx-0 mt-4 mb-3 ">
+            <a href="https://dev.hosteria.ru/2023/01/16/wp-6-1-spacing-presets/" class="no-underline text-gray-800 dark:text-gray-100 transition-colors">
+              WP 6.1 spacing presets      </a>
+          </h2>
+
+          <div class="hosteria-entry-meta">
+            <span class="posted-on"><a href="https://dev.hosteria.ru/2023/01/16/wp-6-1-spacing-presets/" rel="bookmark"><time class="entry-date published" datetime="2023-01-16T06:56:53+03:00">16.01.2023</time></a></span>
+          </div><!-- .entry-meta -->
+
+        </header><!-- .entry-header -->
+
+
+
+        <div class="hosteria-entry-content">
+          <p>This test post was generated using the block theme Emptytheme in WordPress 6.1.1. On this page, some group blocks have border or background color set to increase visibility. This group has a no background color and no additional spacing set.</p>
+          <div class="hosteria-entry-more"><a href="https://dev.hosteria.ru/2023/01/16/wp-6-1-spacing-presets/" class="no-underline font-light  group-hover:text-primary-800 dark:group-hover:text-primary-300 py-1">Read more &gt;&gt;&gt;</a></div>
+        </div><!-- .entry-content -->
+
+      </article><!-- #post-150 -->
+
+
+
+
+      <article id="post-51" class="group post-51 post type-post status-publish format-standard has-post-thumbnail hentry category-6-1 category-block">
+
+
+        <a href="https://dev.hosteria.ru/2023/01/13/theme-block-category/" class="block overflow-hidden rounded-lg" aria-hidden="true" tabindex="-1">
+          <img width="300" height="225" src="https://dev.hosteria.ru/wp-content/uploads/2008/06/dsc20050102_192118_51-300x225.jpg" class="w-full h-auto object-cover rounded-lg transition-transform duration-300 wp-post-image" alt="WP 6.1 Theme block category" decoding="async" fetchpriority="high" srcset="https://dev.hosteria.ru/wp-content/uploads/2008/06/dsc20050102_192118_51-300x225.jpg 300w, https://dev.hosteria.ru/wp-content/uploads/2008/06/dsc20050102_192118_51-1024x768.jpg 1024w, https://dev.hosteria.ru/wp-content/uploads/2008/06/dsc20050102_192118_51-768x576.jpg 768w, https://dev.hosteria.ru/wp-content/uploads/2008/06/dsc20050102_192118_51-1536x1152.jpg 1536w, https://dev.hosteria.ru/wp-content/uploads/2008/06/dsc20050102_192118_51.jpg 1600w" sizes="(max-width: 300px) 100vw, 300px">          </a>
+
+
+        <header class="hosteria-entry-header">
+          <h2 class="text-2xl font-normal mx-0 mt-4 mb-3 ">
+            <a href="https://dev.hosteria.ru/2023/01/13/theme-block-category/" class="no-underline text-gray-800 dark:text-gray-100 transition-colors">
+              WP 6.1 Theme block category      </a>
+          </h2>
+
+          <div class="hosteria-entry-meta">
+            <span class="posted-on"><a href="https://dev.hosteria.ru/2023/01/13/theme-block-category/" rel="bookmark"><time class="entry-date published" datetime="2023-01-13T18:38:05+03:00">13.01.2023</time></a></span>                  <span class="hosteria-entry-comments">
+          <a href="https://dev.hosteria.ru/2023/01/13/theme-block-category/#comments"><span class="hosteria-comment"></span> 1</a>          </span>
+
+          </div><!-- .entry-meta -->
+
+        </header><!-- .entry-header -->
+
+
+
+        <div class="hosteria-entry-content">
+          <p>This test post was generated using the block theme Emptytheme in WordPress 6.1.1. Navigation block with page list: Site logo: Site title: Tagline block: Query loop “Title &amp; Date” variation: Query loop “Title &amp; Excerpt” variation: Query loop “Title, Date</p>
+          <div class="hosteria-entry-more"><a href="https://dev.hosteria.ru/2023/01/13/theme-block-category/" class="no-underline font-light  group-hover:text-primary-800 dark:group-hover:text-primary-300 py-1">Read more &gt;&gt;&gt;</a></div>
+        </div><!-- .entry-content -->
+
+      </article><!-- #post-51 -->
+
+
+
+
+      <article id="post-34" class="group post-34 post type-post status-publish format-standard hentry category-6-1 category-block tag-sample tag-tags tag-test-tag">
+
+
+        <a href="https://dev.hosteria.ru/2023/01/13/widgets-block-category/" class="block overflow-hidden rounded-lg" aria-hidden="true" tabindex="-1">
+          <img src="https://dev.hosteria.ru/wp-content/themes/hosteria/assets/img/no-image.jpg" alt="" class="w-full h-auto object-cover rounded-lg transition-transform duration-300" loading="lazy">
+        </a>
+
+
+        <header class="hosteria-entry-header">
+          <h2 class="text-2xl font-normal mx-0 mt-4 mb-3 ">
+            <a href="https://dev.hosteria.ru/2023/01/13/widgets-block-category/" class="no-underline text-gray-800 dark:text-gray-100 transition-colors">
+              WP 6.1 Widgets block category      </a>
+          </h2>
+
+          <div class="hosteria-entry-meta">
+            <span class="posted-on"><a href="https://dev.hosteria.ru/2023/01/13/widgets-block-category/" rel="bookmark"><time class="entry-date published" datetime="2023-01-13T18:22:21+03:00">13.01.2023</time></a></span>
+          </div><!-- .entry-meta -->
+
+        </header><!-- .entry-header -->
+
+
+
+        <div class="hosteria-entry-content">
+          <p>This test post was generated using the block theme Emptytheme in WordPress 6.1.1. Archives block: Categories list: Custom HTML: test Latest comments: Latest posts: Page list block: RSS block: Shortcode block: Social links: Tag cloud:</p>
+        </div><!-- .entry-content -->
+
+      </article><!-- #post-34 -->
+
+
+
+
+      <article id="post-24" class="group post-24 post type-post status-publish format-standard hentry category-6-1 category-block">
+
+
+        <a href="https://dev.hosteria.ru/2023/01/13/design-category-blocks/" class="block overflow-hidden rounded-lg" aria-hidden="true" tabindex="-1">
+          <img src="https://dev.hosteria.ru/wp-content/themes/hosteria/assets/img/no-image.jpg" alt="" class="w-full h-auto object-cover rounded-lg transition-transform duration-300" loading="lazy">
+        </a>
+
+
+        <header class="hosteria-entry-header">
+          <h2 class="text-2xl font-normal mx-0 mt-4 mb-3 ">
+            <a href="https://dev.hosteria.ru/2023/01/13/design-category-blocks/" class="no-underline text-gray-800 dark:text-gray-100 transition-colors">
+              WP 6.1 Design category blocks      </a>
+          </h2>
+
+          <div class="hosteria-entry-meta">
+            <span class="posted-on"><a href="https://dev.hosteria.ru/2023/01/13/design-category-blocks/" rel="bookmark"><time class="entry-date published" datetime="2023-01-13T18:03:23+03:00">13.01.2023</time></a></span>
+          </div><!-- .entry-meta -->
+
+        </header><!-- .entry-header -->
+
+
+
+        <div class="hosteria-entry-content">
+          <p>This test post was generated using the block theme Emptytheme in WordPress 6.1.1. One single column inside a columns block. Column one. The background color is on the single column. Column two Column one. The background color is on the</p>
+          <div class="hosteria-entry-more"><a href="https://dev.hosteria.ru/2023/01/13/design-category-blocks/" class="no-underline font-light  group-hover:text-primary-800 dark:group-hover:text-primary-300 py-1">Read more &gt;&gt;&gt;</a></div>
+        </div><!-- .entry-content -->
+
+      </article><!-- #post-24 -->
+
+
+
+
+      <article id="post-21" class="group post-21 post type-post status-publish format-standard hentry category-6-1 category-block">
+
+
+        <a href="https://dev.hosteria.ru/2023/01/13/media-category-blocks/" class="block overflow-hidden rounded-lg" aria-hidden="true" tabindex="-1">
+          <img src="https://dev.hosteria.ru/wp-content/themes/hosteria/assets/img/no-image.jpg" alt="" class="w-full h-auto object-cover rounded-lg transition-transform duration-300" loading="lazy">
+        </a>
+
+
+        <header class="hosteria-entry-header">
+          <h2 class="text-2xl font-normal mx-0 mt-4 mb-3 ">
+            <a href="https://dev.hosteria.ru/2023/01/13/media-category-blocks/" class="no-underline text-gray-800 dark:text-gray-100 transition-colors">
+              WP 6.1 Media category blocks      </a>
+          </h2>
+
+          <div class="hosteria-entry-meta">
+            <span class="posted-on"><a href="https://dev.hosteria.ru/2023/01/13/media-category-blocks/" rel="bookmark"><time class="entry-date published" datetime="2023-01-13T18:02:28+03:00">13.01.2023</time></a></span>
+          </div><!-- .entry-meta -->
+
+        </header><!-- .entry-header -->
+
+
+
+        <div class="hosteria-entry-content">
+          <p>This test post was generated using the block theme Emptytheme in WordPress 6.1.1. Image block: Gallery: Audio: Cover: This is the Media &amp; Text block with an image on the left. This is the Media &amp; Text block with a</p>
+          <div class="hosteria-entry-more"><a href="https://dev.hosteria.ru/2023/01/13/media-category-blocks/" class="no-underline font-light  group-hover:text-primary-800 dark:group-hover:text-primary-300 py-1">Read more &gt;&gt;&gt;</a></div>
+        </div><!-- .entry-content -->
+
+      </article><!-- #post-21 -->
+
+
+
+
+      <article id="post-164" class="group post-164 post type-post status-publish format-standard hentry category-6-1 category-block">
+
+
+        <a href="https://dev.hosteria.ru/2023/01/13/text-category-blocks/" class="block overflow-hidden rounded-lg" aria-hidden="true" tabindex="-1">
+          <img src="https://dev.hosteria.ru/wp-content/themes/hosteria/assets/img/no-image.jpg" alt="" class="w-full h-auto object-cover rounded-lg transition-transform duration-300" loading="lazy">
+        </a>
+
+
+        <header class="hosteria-entry-header">
+          <h2 class="text-2xl font-normal mx-0 mt-4 mb-3 ">
+            <a href="https://dev.hosteria.ru/2023/01/13/text-category-blocks/" class="no-underline text-gray-800 dark:text-gray-100 transition-colors">
+              WP 6.1 Text category blocks      </a>
+          </h2>
+
+          <div class="hosteria-entry-meta">
+            <span class="posted-on"><a href="https://dev.hosteria.ru/2023/01/13/text-category-blocks/" rel="bookmark"><time class="entry-date published" datetime="2023-01-13T17:46:19+03:00">13.01.2023</time></a></span>
+          </div><!-- .entry-meta -->
+
+        </header><!-- .entry-header -->
+
+
+
+        <div class="hosteria-entry-content">
+          <p>This test post was generated using the block theme Emptytheme in WordPress 6.1.1. Paragraph H1 Heading H2 Heading H3 Heading H4 Heading H5 Heading H6 Heading Quote block citation classic block Preformatted block Pull quote Citation table cell table cell</p>
+          <div class="hosteria-entry-more"><a href="https://dev.hosteria.ru/2023/01/13/text-category-blocks/" class="no-underline font-light  group-hover:text-primary-800 dark:group-hover:text-primary-300 py-1">Read more &gt;&gt;&gt;</a></div>
+        </div><!-- .entry-content -->
+
+      </article><!-- #post-164 -->
+
+
+
+
+      <article id="post-1788" class="group post-1788 post type-post status-publish format-standard hentry category-block tag-content tag-image">
+
+
+        <a href="https://dev.hosteria.ru/2018/11/03/block-image/" class="block overflow-hidden rounded-lg" aria-hidden="true" tabindex="-1">
+          <img src="https://dev.hosteria.ru/wp-content/themes/hosteria/assets/img/no-image.jpg" alt="" class="w-full h-auto object-cover rounded-lg transition-transform duration-300" loading="lazy">
+        </a>
+
+
+        <header class="hosteria-entry-header">
+          <h2 class="text-2xl font-normal mx-0 mt-4 mb-3 ">
+            <a href="https://dev.hosteria.ru/2018/11/03/block-image/" class="no-underline text-gray-800 dark:text-gray-100 transition-colors">
+              Block: Image      </a>
+          </h2>
+
+          <div class="hosteria-entry-meta">
+            <span class="posted-on"><a href="https://dev.hosteria.ru/2018/11/03/block-image/" rel="bookmark"><time class="entry-date published" datetime="2018-11-03T15:20:00+03:00">03.11.2018</time></a></span>
+          </div><!-- .entry-meta -->
+
+        </header><!-- .entry-header -->
+
+
+
+        <div class="hosteria-entry-content">
+          <p>Welcome to image alignment! If you recognize this post, it is because these are blocks that have been converted from the classic Markup: Image Alignment post. The best way to demonstrate the ebb and flow of the various image positioning</p>
+          <div class="hosteria-entry-more"><a href="https://dev.hosteria.ru/2018/11/03/block-image/" class="no-underline font-light  group-hover:text-primary-800 dark:group-hover:text-primary-300 py-1">Read more &gt;&gt;&gt;</a></div>
+        </div><!-- .entry-content -->
+
+      </article><!-- #post-1788 -->
+
+
+
+
+      <article id="post-1785" class="group post-1785 post type-post status-publish format-standard hentry category-block tag-content">
+
+
+        <a href="https://dev.hosteria.ru/2018/11/03/block-button/" class="block overflow-hidden rounded-lg" aria-hidden="true" tabindex="-1">
+          <img src="https://dev.hosteria.ru/wp-content/themes/hosteria/assets/img/no-image.jpg" alt="" class="w-full h-auto object-cover rounded-lg transition-transform duration-300" loading="lazy">
+        </a>
+
+
+        <header class="hosteria-entry-header">
+          <h2 class="text-2xl font-normal mx-0 mt-4 mb-3 ">
+            <a href="https://dev.hosteria.ru/2018/11/03/block-button/" class="no-underline text-gray-800 dark:text-gray-100 transition-colors">
+              Block: Button      </a>
+          </h2>
+
+          <div class="hosteria-entry-meta">
+            <span class="posted-on"><a href="https://dev.hosteria.ru/2018/11/03/block-button/" rel="bookmark"><time class="entry-date published" datetime="2018-11-03T13:20:00+03:00">03.11.2018</time></a></span>
+          </div><!-- .entry-meta -->
+
+        </header><!-- .entry-header -->
+
+
+
+        <div class="hosteria-entry-content">
+          <p>Button blocks are not semantically buttons, but links inside a styled div.&nbsp; If you do not add a link, a link tag without an anchor will be used. Check to make sure that the text wraps correctly when the button</p>
+          <div class="hosteria-entry-more"><a href="https://dev.hosteria.ru/2018/11/03/block-button/" class="no-underline font-light  group-hover:text-primary-800 dark:group-hover:text-primary-300 py-1">Read more &gt;&gt;&gt;</a></div>
+        </div><!-- .entry-content -->
+
+      </article><!-- #post-1785 -->
+
+
+
+
+      <article id="post-1784" class="group post-1784 post type-post status-publish format-standard hentry category-block tag-image">
+
+
+        <a href="https://dev.hosteria.ru/2018/11/03/block-cover/" class="block overflow-hidden rounded-lg" aria-hidden="true" tabindex="-1">
+          <img src="https://dev.hosteria.ru/wp-content/themes/hosteria/assets/img/no-image.jpg" alt="" class="w-full h-auto object-cover rounded-lg transition-transform duration-300" loading="lazy">
+        </a>
+
+
+        <header class="hosteria-entry-header">
+          <h2 class="text-2xl font-normal mx-0 mt-4 mb-3 ">
+            <a href="https://dev.hosteria.ru/2018/11/03/block-cover/" class="no-underline text-gray-800 dark:text-gray-100 transition-colors">
+              Block: Cover      </a>
+          </h2>
+
+          <div class="hosteria-entry-meta">
+            <span class="posted-on"><a href="https://dev.hosteria.ru/2018/11/03/block-cover/" rel="bookmark"><time class="entry-date published" datetime="2018-11-03T12:25:00+03:00">03.11.2018</time></a></span>
+          </div><!-- .entry-meta -->
+
+        </header><!-- .entry-header -->
+
+
+
+        <div class="hosteria-entry-content">
+          <p>The cover block lets you add text on top of images or videos. This blocktype has several alignment options, and you can also align or center the text inside the block. The background image can be fixed and you can</p>
+          <div class="hosteria-entry-more"><a href="https://dev.hosteria.ru/2018/11/03/block-cover/" class="no-underline font-light  group-hover:text-primary-800 dark:group-hover:text-primary-300 py-1">Read more &gt;&gt;&gt;</a></div>
+        </div><!-- .entry-content -->
+
+      </article><!-- #post-1784 -->
+
+
+
+    </div>
+
+    <nav class="navigation hosteria-pagination" aria-label="Posts pagination">
+      <h2 class="screen-reader-text">Posts pagination</h2>
+      <div class="nav-links"><span aria-current="page" class="page-numbers current">1</span>
+        <a class="page-numbers" href="https://dev.hosteria.ru/page/2/">2</a>
+        <span class="page-numbers dots">…</span>
+        <a class="page-numbers" href="https://dev.hosteria.ru/page/6/">6</a>
+        <a class="next page-numbers" href="https://dev.hosteria.ru/page/2/">»</a></div>
+    </nav>
+
+  </main>
+
+
+  <aside id="secondary" class="hosteria-widget-area">
+    <section id="block-2" class="widget widget_block widget_search"><form role="search" method="get" action="https://dev.hosteria.ru/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label class="wp-block-search__label" for="wp-block-search__input-1">Search</label><div class="wp-block-search__inside-wrapper"><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="" value="" type="search" name="s" required=""><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit">Search</button></div></form></section><section id="block-3" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Свежие записи</h2><ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="https://dev.hosteria.ru/2023/01/16/wp-6-1-font-size-scale/">WP 6.1 Font size scale</a></li>
+    <li><a class="wp-block-latest-posts__post-title" href="https://dev.hosteria.ru/2023/01/16/wp-6-1-spacing-presets/">WP 6.1 spacing presets</a></li>
+    <li><a class="wp-block-latest-posts__post-title" href="https://dev.hosteria.ru/2023/01/13/theme-block-category/">WP 6.1 Theme block category</a></li>
+    <li><a class="wp-block-latest-posts__post-title" href="https://dev.hosteria.ru/2023/01/13/widgets-block-category/">WP 6.1 Widgets block category</a></li>
+    <li><a class="wp-block-latest-posts__post-title" href="https://dev.hosteria.ru/2023/01/13/design-category-blocks/">WP 6.1 Design category blocks</a></li>
+  </ul></div></div></section><section id="block-4" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Свежие комментарии</h2><ol class="wp-block-latest-comments"><li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="https://dev.hosteria.ru">admin</a> on <a class="wp-block-latest-comments__comment-link" href="https://dev.hosteria.ru/2012/01/03/template-comments/#comment-35">Template: Comments</a></footer></article></li><li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="https://wpthemetestdata.wordpress.com/">themedemos</a> on <a class="wp-block-latest-comments__comment-link" href="https://dev.hosteria.ru/2023/01/13/theme-block-category/#comment-2">WP 6.1 Theme block category</a></footer></article></li><li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="http://example.org/">John Doe</a> on <a class="wp-block-latest-comments__comment-link" href="https://dev.hosteria.ru/2009/08/06/edge-case-no-content/#comment-34">Edge Case: No Content</a></footer></article></li><li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="http://example.org/">Jane Doe</a> on <a class="wp-block-latest-comments__comment-link" href="https://dev.hosteria.ru/2012/01/04/template-password-protected/#comment-33">Protected: Template: Password Protected (the password is “enter”)</a></footer></article></li><li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="http://example.org/">Jane Doe</a> on <a class="wp-block-latest-comments__comment-link" href="https://dev.hosteria.ru/2012/01/03/template-comments/#comment-26">Template: Comments</a></footer></article></li></ol></div></div></section><section id="block-5" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Архивы</h2><ul class="wp-block-archives-list wp-block-archives">	<li><a href="https://dev.hosteria.ru/2023/01/">January 2023</a></li>
+    <li><a href="https://dev.hosteria.ru/2018/11/">November 2018</a></li>
+    <li><a href="https://dev.hosteria.ru/2018/10/">October 2018</a></li>
+    <li><a href="https://dev.hosteria.ru/2013/01/">January 2013</a></li>
+    <li><a href="https://dev.hosteria.ru/2012/03/">March 2012</a></li>
+    <li><a href="https://dev.hosteria.ru/2012/01/">January 2012</a></li>
+    <li><a href="https://dev.hosteria.ru/2011/03/">March 2011</a></li>
+    <li><a href="https://dev.hosteria.ru/2010/10/">October 2010</a></li>
+    <li><a href="https://dev.hosteria.ru/2010/09/">September 2010</a></li>
+    <li><a href="https://dev.hosteria.ru/2010/08/">August 2010</a></li>
+    <li><a href="https://dev.hosteria.ru/2010/07/">July 2010</a></li>
+    <li><a href="https://dev.hosteria.ru/2010/06/">June 2010</a></li>
+    <li><a href="https://dev.hosteria.ru/2010/05/">May 2010</a></li>
+    <li><a href="https://dev.hosteria.ru/2010/04/">April 2010</a></li>
+    <li><a href="https://dev.hosteria.ru/2010/03/">March 2010</a></li>
+    <li><a href="https://dev.hosteria.ru/2010/02/">February 2010</a></li>
+    <li><a href="https://dev.hosteria.ru/2010/01/">January 2010</a></li>
+    <li><a href="https://dev.hosteria.ru/2009/10/">October 2009</a></li>
+    <li><a href="https://dev.hosteria.ru/2009/09/">September 2009</a></li>
+    <li><a href="https://dev.hosteria.ru/2009/08/">August 2009</a></li>
+    <li><a href="https://dev.hosteria.ru/2009/07/">July 2009</a></li>
+    <li><a href="https://dev.hosteria.ru/2009/06/">June 2009</a></li>
+    <li><a href="https://dev.hosteria.ru/2009/05/">May 2009</a></li>
+  </ul></div></div></section><section id="block-6" class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Рубрики</h2><ul class="wp-block-categories-list wp-block-categories-taxonomy-category wp-block-categories">	<li class="cat-item cat-item-3"><a href="https://dev.hosteria.ru/category/6-1/">6.1</a>
+  </li>
+    <li class="cat-item cat-item-4"><a href="https://dev.hosteria.ru/category/aciform/">aciform</a>
+    </li>
+    <li class="cat-item cat-item-5"><a href="https://dev.hosteria.ru/category/antiquarianism/">antiquarianism</a>
+    </li>
+    <li class="cat-item cat-item-6"><a href="https://dev.hosteria.ru/category/arrangement/">arrangement</a>
+    </li>
+    <li class="cat-item cat-item-7"><a href="https://dev.hosteria.ru/category/asmodeus/">asmodeus</a>
+    </li>
+    <li class="cat-item cat-item-8"><a href="https://dev.hosteria.ru/category/block/">Block</a>
+    </li>
+    <li class="cat-item cat-item-10"><a href="https://dev.hosteria.ru/category/broder/">broder</a>
+    </li>
+    <li class="cat-item cat-item-11"><a href="https://dev.hosteria.ru/category/buying/">buying</a>
+    </li>
+    <li class="cat-item cat-item-12"><a href="https://dev.hosteria.ru/category/cat-a/">Cat A</a>
+    </li>
+    <li class="cat-item cat-item-13"><a href="https://dev.hosteria.ru/category/cat-b/">Cat B</a>
+    </li>
+    <li class="cat-item cat-item-14"><a href="https://dev.hosteria.ru/category/cat-c/">Cat C</a>
+    </li>
+    <li class="cat-item cat-item-15"><a href="https://dev.hosteria.ru/category/championship/">championship</a>
+    </li>
+    <li class="cat-item cat-item-16"><a href="https://dev.hosteria.ru/category/chastening/">chastening</a>
+    </li>
+    <li class="cat-item cat-item-62"><a href="https://dev.hosteria.ru/category/parent/child-1/">Child 1</a>
+    </li>
+    <li class="cat-item cat-item-63"><a href="https://dev.hosteria.ru/category/parent/child-1/child-2/">Child 2</a>
+    </li>
+    <li class="cat-item cat-item-64"><a href="https://dev.hosteria.ru/category/parent-category/child-category-01/">Child Category 01</a>
+    </li>
+    <li class="cat-item cat-item-65"><a href="https://dev.hosteria.ru/category/parent-category/child-category-02/">Child Category 02</a>
+    </li>
+    <li class="cat-item cat-item-66"><a href="https://dev.hosteria.ru/category/parent-category/child-category-03/">Child Category 03</a>
+    </li>
+    <li class="cat-item cat-item-67"><a href="https://dev.hosteria.ru/category/parent-category/child-category-04/">Child Category 04</a>
+    </li>
+    <li class="cat-item cat-item-68"><a href="https://dev.hosteria.ru/category/parent-category/child-category-05/">Child Category 05</a>
+    </li>
+    <li class="cat-item cat-item-17"><a href="https://dev.hosteria.ru/category/classic/">Classic</a>
+    </li>
+    <li class="cat-item cat-item-18"><a href="https://dev.hosteria.ru/category/clerkship/">clerkship</a>
+    </li>
+    <li class="cat-item cat-item-19"><a href="https://dev.hosteria.ru/category/disinclination/">disinclination</a>
+    </li>
+    <li class="cat-item cat-item-20"><a href="https://dev.hosteria.ru/category/disinfection/">disinfection</a>
+    </li>
+    <li class="cat-item cat-item-21"><a href="https://dev.hosteria.ru/category/dispatch/">dispatch</a>
+    </li>
+    <li class="cat-item cat-item-22"><a href="https://dev.hosteria.ru/category/echappee/">echappee</a>
+    </li>
+    <li class="cat-item cat-item-23"><a href="https://dev.hosteria.ru/category/edge-case-2/">Edge Case</a>
+    </li>
+    <li class="cat-item cat-item-24"><a href="https://dev.hosteria.ru/category/enphagy/">enphagy</a>
+    </li>
+    <li class="cat-item cat-item-25"><a href="https://dev.hosteria.ru/category/equipollent/">equipollent</a>
+    </li>
+    <li class="cat-item cat-item-26"><a href="https://dev.hosteria.ru/category/fatuity/">fatuity</a>
+    </li>
+    <li class="cat-item cat-item-69"><a href="https://dev.hosteria.ru/category/foo-parent/foo-a-foo-parent/">Foo A</a>
+    </li>
+    <li class="cat-item cat-item-27"><a href="https://dev.hosteria.ru/category/foo-a/">Foo A</a>
+    </li>
+    <li class="cat-item cat-item-28"><a href="https://dev.hosteria.ru/category/foo-parent/">Foo Parent</a>
+    </li>
+    <li class="cat-item cat-item-29"><a href="https://dev.hosteria.ru/category/gaberlunzie/">gaberlunzie</a>
+    </li>
+    <li class="cat-item cat-item-70"><a href="https://dev.hosteria.ru/category/parent-category/child-category-03/grandchild-category/">Grandchild Category</a>
+    </li>
+    <li class="cat-item cat-item-30"><a href="https://dev.hosteria.ru/category/illtempered/">illtempered</a>
+    </li>
+    <li class="cat-item cat-item-31"><a href="https://dev.hosteria.ru/category/insubordination/">insubordination</a>
+    </li>
+    <li class="cat-item cat-item-32"><a href="https://dev.hosteria.ru/category/lender/">lender</a>
+    </li>
+    <li class="cat-item cat-item-33"><a href="https://dev.hosteria.ru/category/markup/">Markup</a>
+    </li>
+    <li class="cat-item cat-item-34"><a href="https://dev.hosteria.ru/category/media-2/">Media</a>
+    </li>
+    <li class="cat-item cat-item-35"><a href="https://dev.hosteria.ru/category/monosyllable/">monosyllable</a>
+    </li>
+    <li class="cat-item cat-item-36"><a href="https://dev.hosteria.ru/category/packthread/">packthread</a>
+    </li>
+    <li class="cat-item cat-item-37"><a href="https://dev.hosteria.ru/category/palter/">palter</a>
+    </li>
+    <li class="cat-item cat-item-38"><a href="https://dev.hosteria.ru/category/papilionaceous/">papilionaceous</a>
+    </li>
+    <li class="cat-item cat-item-39"><a href="https://dev.hosteria.ru/category/parent/">Parent</a>
+    </li>
+    <li class="cat-item cat-item-40"><a href="https://dev.hosteria.ru/category/parent-category/">Parent Category</a>
+    </li>
+    <li class="cat-item cat-item-41"><a href="https://dev.hosteria.ru/category/personable/">personable</a>
+    </li>
+    <li class="cat-item cat-item-42"><a href="https://dev.hosteria.ru/category/post-formats/">Post Formats</a>
+    </li>
+    <li class="cat-item cat-item-43"><a href="https://dev.hosteria.ru/category/propylaeum/">propylaeum</a>
+    </li>
+    <li class="cat-item cat-item-44"><a href="https://dev.hosteria.ru/category/pustule/">pustule</a>
+    </li>
+    <li class="cat-item cat-item-45"><a href="https://dev.hosteria.ru/category/quartern/">quartern</a>
+    </li>
+    <li class="cat-item cat-item-46"><a href="https://dev.hosteria.ru/category/scholarship/">scholarship</a>
+    </li>
+    <li class="cat-item cat-item-47"><a href="https://dev.hosteria.ru/category/selfconvicted/">selfconvicted</a>
+    </li>
+    <li class="cat-item cat-item-48"><a href="https://dev.hosteria.ru/category/showshoe/">showshoe</a>
+    </li>
+    <li class="cat-item cat-item-49"><a href="https://dev.hosteria.ru/category/sloyd/">sloyd</a>
+    </li>
+    <li class="cat-item cat-item-50"><a href="https://dev.hosteria.ru/category/aciform/sub/">sub</a>
+    </li>
+    <li class="cat-item cat-item-51"><a href="https://dev.hosteria.ru/category/sublunary/">sublunary</a>
+    </li>
+    <li class="cat-item cat-item-52"><a href="https://dev.hosteria.ru/category/tamtam/">tamtam</a>
+    </li>
+    <li class="cat-item cat-item-53"><a href="https://dev.hosteria.ru/category/template-2/">Template</a>
+    </li>
+    <li class="cat-item cat-item-54"><a href="https://dev.hosteria.ru/category/uncategorized/">Uncategorized</a>
+    </li>
+    <li class="cat-item cat-item-55"><a href="https://dev.hosteria.ru/category/unpublished/">Unpublished</a>
+    </li>
+    <li class="cat-item cat-item-56"><a href="https://dev.hosteria.ru/category/weakhearted/">weakhearted</a>
+    </li>
+    <li class="cat-item cat-item-57"><a href="https://dev.hosteria.ru/category/ween/">ween</a>
+    </li>
+    <li class="cat-item cat-item-58"><a href="https://dev.hosteria.ru/category/wellhead/">wellhead</a>
+    </li>
+    <li class="cat-item cat-item-59"><a href="https://dev.hosteria.ru/category/wellintentioned/">wellintentioned</a>
+    </li>
+    <li class="cat-item cat-item-60"><a href="https://dev.hosteria.ru/category/whetstone/">whetstone</a>
+    </li>
+    <li class="cat-item cat-item-61"><a href="https://dev.hosteria.ru/category/years/">years</a>
+    </li>
+    <li class="cat-item cat-item-1"><a href="https://dev.hosteria.ru/category/%d0%b1%d0%b5%d0%b7-%d1%80%d1%83%d0%b1%d1%80%d0%b8%d0%ba%d0%b8/">Без рубрики</a>
+    </li>
+  </ul></div></div></section></aside><!-- #secondary -->
+
+  <footer id="colophon" class="hosteria-site-footer">
+    <div class="max-w-screen-xl mx-auto px-4 2xl:px-0 py-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex flex-col items-center lg:items-start  flex-shrink-0">
+
+          <!-- .site-info -->
+        </div>
+
+
+      </div>
+      <div class="hosteria-copyright">© 2026 <a href="https://dev.hosteria.ru/" rel="home">Hosteria</a></div>
+    </div>
+
+  </footer></div>
+<!-- #colophon -->
+<!-- #page -->
+
+<script type="speculationrules">
+  {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/hosteria/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+<!-- Плавающая кнопка вызова панели -->
+<button id="hosta11y-toggle-btn" type="button" class="hosta11y-toggle-btn" title="Версия для слабовидящих">
+  <svg xmlns="http://www.w3.org/2000/svg" class="hosta11y-toggle-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+  </svg>
+</button>
+
+<!-- Панель настроек доступности -->
+<div id="hosta11y-panel" class="hosta11y-panel hosta11y-hidden">
+  <div class="hosta11y-header">
+    Цветовые схемы, шрифт
+  </div>
+
+  <div class="hosta11y-controls-group">
+
+    <!-- 1. ЦВЕТ -->
+    <div class="hosta11y-block">
+      <span class="hosta11y-block-title">Цвет</span>
+      <div class="hosta11y-btn-group">
+        <button id="hosta11y-btn-theme-norm" type="button" class="hosta11y-btn hosta11y-btn-theme-norm">Норм</button>
+        <button id="hosta11y-btn-theme-b" type="button" class="hosta11y-btn hosta11y-btn-theme-b">Б</button>
+        <button id="hosta11y-btn-theme-ch" type="button" class="hosta11y-btn hosta11y-btn-theme-ch">Ч</button>
+        <button id="hosta11y-btn-theme-g" type="button" class="hosta11y-btn hosta11y-btn-theme-g">Г</button>
+        <button id="hosta11y-btn-theme-k" type="button" class="hosta11y-btn hosta11y-btn-theme-k">К</button>
+      </div>
+    </div>
+
+    <!-- 2. РАЗМЕР -->
+    <div class="hosta11y-block">
+      <span class="hosta11y-block-title">Размер</span>
+      <div class="hosta11y-btn-group">
+        <button id="hosta11y-btn-font-size-dec" type="button" class="hosta11y-btn hosta11y-btn-default">- Меньше</button>
+        <button id="hosta11y-btn-font-size-inc" type="button" class="hosta11y-btn hosta11y-btn-default">+ Больше</button>
+      </div>
+    </div>
+
+    <!-- 3. ЗАСЕЧКИ -->
+    <div class="hosta11y-block">
+      <span class="hosta11y-block-title">Засечки</span>
+      <div class="hosta11y-btn-group">
+        <button id="hosta11y-btn-font-sans" type="button" class="hosta11y-btn hosta11y-btn-sans">Без засечек</button>
+        <button id="hosta11y-btn-font-serif" type="button" class="hosta11y-btn hosta11y-btn-serif">С засечками</button>
+      </div>
+    </div>
+
+    <!-- 4. КЕРНИНГ -->
+    <div class="hosta11y-block">
+      <span class="hosta11y-block-title">Кернинг</span>
+      <div class="hosta11y-btn-group">
+        <button id="hosta11y-btn-kerning-dec" type="button" class="hosta11y-btn hosta11y-btn-default">Меньше</button>
+        <button id="hosta11y-btn-kerning-inc" type="button" class="hosta11y-btn hosta11y-btn-default hosta11y-tracking-widest">Б о л ь ш е</button>
+      </div>
+    </div>
+
+    <!-- 5. ИНТЕРВАЛ -->
+    <div class="hosta11y-block">
+      <span class="hosta11y-block-title">Интервал</span>
+      <div class="hosta11y-btn-group">
+        <button id="hosta11y-btn-line-height-dec" type="button" class="hosta11y-btn hosta11y-btn-default hosta11y-font-bold">///</button>
+        <button id="hosta11y-btn-line-height-inc" type="button" class="hosta11y-btn hosta11y-btn-default hosta11y-font-bold">/ / /</button>
+      </div>
+    </div>
+
+    <!-- 6. ФОТО -->
+    <div class="hosta11y-block">
+      <span class="hosta11y-block-title">Фото</span>
+      <button id="hosta11y-btn-toggle-img" type="button" class="hosta11y-btn hosta11y-btn-default hosta11y-btn-img">
+        <span class="hosta11y-img-icon"></span>
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+<script id="hosteria-js-extra">
+  var hosteriaThemeSettings = {"enableXEmbed":""};
+  //# sourceURL=hosteria-js-extra
+</script>
+<script id="hosteria-js" src="https://dev.hosteria.ru/wp-content/themes/hosteria/assets/hosteria.js?ver=1.9"></script>
+<script id="hstrmoga-swiper-lib-js" src="https://dev.hosteria.ru/wp-content/plugins/hosteria-modal-gallery/vendor/swiper-bundle.min.js?ver=14.0.0"></script>
+<script id="hstrmoga-main-script-js-extra">
+  var hstrmogaGallerySettings = {"showAlt":"1","bgColor":"#000000"};
+  //# sourceURL=hstrmoga-main-script-js-extra
+</script>
+<script id="hstrmoga-main-script-js" src="https://dev.hosteria.ru/wp-content/plugins/hosteria-modal-gallery/assets/hosteria-modal-gallery.js?ver=1.1"></script>
+<script id="wp-emoji-settings" type="application/json">
+  {"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://dev.hosteria.ru/wp-includes/js/wp-emoji-release.min.js?ver=7.0.3"}}
+</script>
+<script type="module">
+  /*! This file is auto-generated */
+  var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+  //# sourceURL=https://dev.hosteria.ru/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<div id="hosteria-blur-screen" class="backdrop-blur hidden transition-opacity fixed inset-0 w-full overflow-x-hidden overflow-y-auto md:inset-0 max-h-full flex z-0"></div>
+
+
+<div class="swiper-container hide" id="swiper-container" style="--hstrmoga-bg-color: #000000;">
+  <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden" id="swiperGallery">
+    <div class="swiper-wrapper" id="swiper-wrapper-7f48894b8f07f0ce" aria-live="polite">
+    </div>
+    <div class="swiper-button-prev swiper-button-white swiper-button-disabled swiper-button-lock" tabindex="-1" role="button" aria-label="Previous slide" aria-disabled="true"><svg class="swiper-navigation-icon" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor"></path></svg></div>
+    <div class="swiper-button-next swiper-button-white swiper-button-disabled swiper-button-lock" tabindex="-1" role="button" aria-label="Next slide" aria-disabled="true"><svg class="swiper-navigation-icon" width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.38296 20.0762C0.111788 19.805 0.111788 19.3654 0.38296 19.0942L9.19758 10.2796L0.38296 1.46497C0.111788 1.19379 0.111788 0.754138 0.38296 0.482966C0.654131 0.211794 1.09379 0.211794 1.36496 0.482966L10.4341 9.55214C10.8359 9.9539 10.8359 10.6053 10.4341 11.007L1.36496 20.0762C1.09379 20.3474 0.654131 20.3474 0.38296 20.0762Z" fill="currentColor"></path></svg></div>
+    <div class="swiper-scrollbar"></div>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+  <div class="swiper-container__close" id="swiper-close">
+    <svg width="48" height="48" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="Icon/close">
+        <path id="Path" d="M2.78431 2.08859L2.85355 2.14645L8 7.293L13.1464 2.14645C13.3417 1.95118 13.6583 1.95118 13.8536 2.14645C14.0271 2.32001 14.0464 2.58944 13.9114 2.78431L13.8536 2.85355L8.707 8L13.8536 13.1464C14.0488 13.3417 14.0488 13.6583 13.8536 13.8536C13.68 14.0271 13.4106 14.0464 13.2157 13.9114L13.1464 13.8536L8 8.707L2.85355 13.8536C2.65829 14.0488 2.34171 14.0488 2.14645 13.8536C1.97288 13.68 1.9536 13.4106 2.08859 13.2157L2.14645 13.1464L7.293 8L2.14645 2.85355C1.95118 2.65829 1.95118 2.34171 2.14645 2.14645C2.32001 1.97288 2.58944 1.9536 2.78431 2.08859Z" fill="#ffffff"></path>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<script src="/assets/hosteria-accessibility.js" ></script>
+
+</body>
+</html>
