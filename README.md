@@ -11,7 +11,7 @@ A lightweight, zero-dependency WordPress accessibility toolbar and responsive se
 
 ## 🌟 Key Features
 
-* **🎨 High-Contrast Color Schemes** — Toggle between *Normal*, *Black*, *Black on Yellow*, *Yellow on Black*, and *High Contrast* modes.
+* **🎨 High-Contrast Color Schemes** — Toggle between *Normal*, *Black*, *White*, *Blue*, and *Brown* modes.
 * **🔤 Flexible Typography** — Easily increase or decrease font size and switch between Serif and Sans-Serif font families.
 * **↔️ Text Spacing Controls** — Adjust both letter spacing and line spacing.
 * **🖼️ Media Visibility** — Hide background and inline images with a single click to reduce visual clutter and improve focus.

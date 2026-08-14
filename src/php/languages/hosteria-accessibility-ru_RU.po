@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Hosteria Accessibility\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-13 05:52+0000\n"
-"PO-Revision-Date: 2026-08-13 05:58+0000\n"
+"PO-Revision-Date: 2026-08-13 08:54+0000\n"
 "Last-Translator: \n"
 "Language-Team: Русский\n"
 "Language: ru_RU\n"
@@ -16,11 +16,11 @@ msgstr ""
 "X-Loco-Version: 2.8.8; wp-7.0.4; php-8.2.29\n"
 "X-Domain: hosteria-accessibility"
 
-#: hosteria-accessibility.php:136
+#: hosteria-accessibility.php:131
 msgid "+ Larger"
 msgstr "+ Больше"
 
-#: hosteria-accessibility.php:33
+#: hosteria-accessibility.php:98
 msgid "Accessibility version"
 msgstr "Версия для людей с ограниченными возможностями"
 
@@ -28,37 +28,46 @@ msgstr "Версия для людей с ограниченными возмо�
 msgid "Alexander Dolzhenkov <okb3wok@yandex.ru>"
 msgstr "Александр Долженков <okb3wok@yandex.ru>"
 
-#: hosteria-accessibility.php:95
+#: hosteria-accessibility.php:122
 msgid "Black"
 msgstr "Б"
 
-#: hosteria-accessibility.php:103
+#: hosteria-accessibility.php:123
 msgid "Blue"
 msgstr "Г"
 
-#: hosteria-accessibility.php:111
+#: hosteria-accessibility.php:124
 msgid "Brown"
 msgstr "К"
 
-#: hosteria-accessibility.php:70
+#: hosteria-accessibility.php:118
 msgid "Color"
 msgstr "Цвет"
 
-#: hosteria-accessibility.php:63
+#: hosteria-accessibility.php:115
 msgid "Color schemes and font"
 msgstr "Цветовые схемы, шрифт"
 
-#: hosteria-accessibility.php:144
+#: hosteria-accessibility.php:64
+msgid "Custom Button ID"
+msgstr "ID пользовательской кнопки"
+
+#: hosteria-accessibility.php:135
 msgid "Font"
 msgstr "Шрифт"
 
-#: hosteria-accessibility.php:119
+#: hosteria-accessibility.php:128
 msgid "Font size"
 msgstr "Размер"
 
 #. Name of the plugin
+#: hosteria-accessibility.php:42
 msgid "Hosteria Accessibility"
 msgstr "Hosteria Accessibility"
+
+#: hosteria-accessibility.php:41
+msgid "Hosteria Accessibility Settings"
+msgstr "Настройки Hosteria Accessibility"
 
 #. Author URI of the plugin
 msgid "https://hosteria.ru/"
@@ -68,23 +77,34 @@ msgstr "https://hosteria.ru/"
 msgid "https://wordpress.org/plugins/hosteria-accessibility/"
 msgstr "https://wordpress.org/plugins/hosteria-accessibility/"
 
-#: hosteria-accessibility.php:219
+#: hosteria-accessibility.php:156
 msgid "Images"
 msgstr "Фото"
 
-#: hosteria-accessibility.php:178
+#: hosteria-accessibility.php:74
+msgid ""
+"Leave blank to use the default floating button. Specify the element ID "
+"without the leading \"#\" (e.g., my-custom-button) if you want the panel to "
+"open when clicking your custom button."
+msgstr ""
+"Оставьте поле пустым, чтобы использовать стандартную плавающую кнопку. "
+"Укажите ID кнопки(элемента) без префикса \"#\" (например, my-custom-button), "
+"если хотите, чтобы панель открывалась при нажатии на вашу пользовательскую "
+"кнопку."
+
+#: hosteria-accessibility.php:144
 msgid "Less"
 msgstr "Меньше"
 
-#: hosteria-accessibility.php:169
+#: hosteria-accessibility.php:142
 msgid "Letter spacing"
 msgstr "Кернинг"
 
-#: hosteria-accessibility.php:194
+#: hosteria-accessibility.php:149
 msgid "Line spacing"
 msgstr "Интервал"
 
-#: hosteria-accessibility.php:186
+#: hosteria-accessibility.php:145
 msgid "M o r e"
 msgstr "Б о л ь ш е"
 
@@ -96,26 +116,34 @@ msgstr ""
 "Сделайте свой сайт доступным для пользователей с нарушениями зрения: "
 "настройте цвета, межстрочный интервал, размер шрифта и изображения."
 
-#: hosteria-accessibility.php:79
+#: hosteria-accessibility.php:120
 msgid "Normal"
 msgstr "Норм"
 
-#: hosteria-accessibility.php:153
+#: hosteria-accessibility.php:168
+msgid "Reset all accessibility settings"
+msgstr "Сбросить все настройки специальных возможностей"
+
+#: hosteria-accessibility.php:170
+msgid "Reset View"
+msgstr "Обычный вид"
+
+#: hosteria-accessibility.php:137
 msgid "Sans Serif"
 msgstr "Без засечек"
 
-#: hosteria-accessibility.php:161
+#: hosteria-accessibility.php:138
 msgid "Serif"
 msgstr "С засечками"
 
-#: hosteria-accessibility.php:226 hosteria-accessibility.php:227
+#: hosteria-accessibility.php:157
 msgid "Toggle images"
 msgstr "Убрать фото"
 
-#: hosteria-accessibility.php:87
+#: hosteria-accessibility.php:121
 msgid "White"
 msgstr "Б"
 
-#: hosteria-accessibility.php:128
+#: hosteria-accessibility.php:130
 msgid "− Smaller"
 msgstr "- Меньше"

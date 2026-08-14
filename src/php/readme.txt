@@ -18,7 +18,7 @@ The plugin allows visitors to customize the appearance and readability of websit
 
 Available options include:
 
-- **Color Schemes:** Normal, Black, Black on Yellow, Yellow on Black, and High Contrast.
+- **Color Schemes:** Normal, Black, White, Blue, and Brown.
 - **Font Size:** Quickly increase or decrease the font size.
 - **Font:** Switch between sans-serif and serif fonts.
 - **Letter Spacing:** Increase or decrease the spacing between letters.
@@ -81,3 +81,9 @@ No. Settings are stored locally in the visitor's browser using `localStorage`. N
 
 = 1.0 =
 * Initial official release.
+
+= 1.1 =
+* Added Russian localization.
+
+= 1.2 =
+* Fix mobile version.

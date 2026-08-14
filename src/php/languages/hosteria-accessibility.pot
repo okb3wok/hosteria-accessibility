@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Hosteria Accessibility\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-13 05:52+0000\n"
+"POT-Creation-Date: 2026-08-13 08:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -16,11 +16,11 @@ msgstr ""
 "X-Loco-Version: 2.8.8; wp-7.0.4; php-8.2.29\n"
 "X-Domain: hosteria-accessibility"
 
-#: hosteria-accessibility.php:136
+#: hosteria-accessibility.php:131
 msgid "+ Larger"
 msgstr ""
 
-#: hosteria-accessibility.php:33
+#: hosteria-accessibility.php:98
 msgid "Accessibility version"
 msgstr ""
 
@@ -28,36 +28,45 @@ msgstr ""
 msgid "Alexander Dolzhenkov <okb3wok@yandex.ru>"
 msgstr ""
 
-#: hosteria-accessibility.php:95
+#: hosteria-accessibility.php:122
 msgid "Black"
 msgstr ""
 
-#: hosteria-accessibility.php:103
+#: hosteria-accessibility.php:123
 msgid "Blue"
 msgstr ""
 
-#: hosteria-accessibility.php:111
+#: hosteria-accessibility.php:124
 msgid "Brown"
 msgstr ""
 
-#: hosteria-accessibility.php:70
+#: hosteria-accessibility.php:118
 msgid "Color"
 msgstr ""
 
-#: hosteria-accessibility.php:63
+#: hosteria-accessibility.php:115
 msgid "Color schemes and font"
 msgstr ""
 
-#: hosteria-accessibility.php:144
+#: hosteria-accessibility.php:64
+msgid "Custom Button ID"
+msgstr ""
+
+#: hosteria-accessibility.php:135
 msgid "Font"
 msgstr ""
 
-#: hosteria-accessibility.php:119
+#: hosteria-accessibility.php:128
 msgid "Font size"
 msgstr ""
 
 #. Name of the plugin
+#: hosteria-accessibility.php:42
 msgid "Hosteria Accessibility"
+msgstr ""
+
+#: hosteria-accessibility.php:41
+msgid "Hosteria Accessibility Settings"
 msgstr ""
 
 #. Author URI of the plugin
@@ -68,23 +77,30 @@ msgstr ""
 msgid "https://wordpress.org/plugins/hosteria-accessibility/"
 msgstr ""
 
-#: hosteria-accessibility.php:219
+#: hosteria-accessibility.php:156
 msgid "Images"
 msgstr ""
 
-#: hosteria-accessibility.php:178
+#: hosteria-accessibility.php:74
+msgid ""
+"Leave blank to use the default floating button. Specify the element ID "
+"without the leading \"#\" (e.g., my-custom-button) if you want the panel to "
+"open when clicking your custom button."
+msgstr ""
+
+#: hosteria-accessibility.php:144
 msgid "Less"
 msgstr ""
 
-#: hosteria-accessibility.php:169
+#: hosteria-accessibility.php:142
 msgid "Letter spacing"
 msgstr ""
 
-#: hosteria-accessibility.php:194
+#: hosteria-accessibility.php:149
 msgid "Line spacing"
 msgstr ""
 
-#: hosteria-accessibility.php:186
+#: hosteria-accessibility.php:145
 msgid "M o r e"
 msgstr ""
 
@@ -94,26 +110,34 @@ msgid ""
 "spacing, font sizes, and images."
 msgstr ""
 
-#: hosteria-accessibility.php:79
+#: hosteria-accessibility.php:120
 msgid "Normal"
 msgstr ""
 
-#: hosteria-accessibility.php:153
+#: hosteria-accessibility.php:168
+msgid "Reset all accessibility settings"
+msgstr ""
+
+#: hosteria-accessibility.php:170
+msgid "Reset View"
+msgstr ""
+
+#: hosteria-accessibility.php:137
 msgid "Sans Serif"
 msgstr ""
 
-#: hosteria-accessibility.php:161
+#: hosteria-accessibility.php:138
 msgid "Serif"
 msgstr ""
 
-#: hosteria-accessibility.php:226 hosteria-accessibility.php:227
+#: hosteria-accessibility.php:157
 msgid "Toggle images"
 msgstr ""
 
-#: hosteria-accessibility.php:87
+#: hosteria-accessibility.php:121
 msgid "White"
 msgstr ""
 
-#: hosteria-accessibility.php:128
+#: hosteria-accessibility.php:130
 msgid "− Smaller"
 msgstr ""

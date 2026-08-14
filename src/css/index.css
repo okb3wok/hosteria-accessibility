@@ -6,12 +6,12 @@
 
 .hosta11y-toggle-btn {
     position: fixed !important;
-    top: 2.25rem !important;
-    right: 1.25rem !important;
+    top: 36px !important;
+    right: 20px !important;
     z-index: 999999 !important;
     background-color: #000000 !important;
     color: #ffffff !important;
-    padding: 0.75rem !important;
+    padding: 12px !important;
     border-radius: 9999px !important;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
     display: flex !important;
@@ -25,13 +25,19 @@
     height: auto !important;
 }
 
+
+
 .hosta11y-toggle-btn:hover {
     transform: scale(1.05) !important;
 }
+.hosta11y-toggle-btn:focus-within {
+    outline: 3px solid rgba(0, 85, 255, 0.93) !important;
+    outline-offset: 0 !important;
+}
 
 .hosta11y-toggle-icon {
-    width: 1.75rem !important;
-    height: 1.75rem !important;
+    width: 28px !important;
+    height: 28px !important;
 }
 
 .hosta11y-panel {
@@ -42,7 +48,7 @@
     z-index: 999998 !important;
     background-color: #f0f0f0 !important;
     border-bottom: 1px solid #d1d5db !important;
-    padding: 0.75rem 1rem !important;
+    padding: 12px 16px !important;
     color: #000000 !important;
     font-family: 'Roboto', sans-serif !important;
     box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1) !important;
@@ -57,11 +63,11 @@
 .hosta11y-header {
     text-align: center !important;
     font-weight: 700 !important;
-    font-size: 1rem !important;
+    font-size: 16px !important;
     text-transform: uppercase !important;
     letter-spacing: 0.05em !important;
     color: #374151 !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 16px !important;
 }
 
 .hosta11y-controls-group {
@@ -69,28 +75,28 @@
     flex-wrap: wrap !important;
     align-items: center !important;
     justify-content: center !important;
-    gap: 0.75rem !important;
-    font-size: 0.875rem !important;
+    gap: 12px !important;
+    font-size: 14px !important;
 }
 
 .hosta11y-block {
     position: relative !important;
     border: 1px solid #d1d5db !important;
-    border-radius: 0.375rem !important;
-    padding: 0.5rem !important;
-    padding-top: 1rem !important;
+    border-radius: 6px !important;
+    padding: 8px !important;
+    padding-top: 16px !important;
     background-color: #e8e8e8 !important;
 }
 
 .hosta11y-block-title {
     position: absolute !important;
-    top: -0.625rem !important;
-    left: 0.5rem !important;
+    top: -10px !important;
+    left: 8px !important;
     background-color: #ffffff !important;
     font-size: 13px !important;
-    padding: 0 0.25rem !important;
+    padding: 0 4px !important;
     color: #4b5563 !important;
-    border-radius: 0.25rem !important;
+    border-radius: 4px !important;
     border: 1px solid #e5e7eb !important;
     line-height: 1 !important;
 }
@@ -98,12 +104,12 @@
 .hosta11y-btn-group {
     display: flex !important;
     align-items: center !important;
-    gap: 0.25rem !important;
+    gap: 4px !important;
 }
 
 .hosta11y-btn {
     font-size: 16px !important;
-    line-height: 1.25rem !important;
+    line-height: 20px !important;
     cursor: pointer !important;
     margin: 0 !important;
     outline: none !important;
@@ -117,11 +123,11 @@
 }
 
 .hosta11y-btn-default {
-    padding: 0.25rem 0.75rem !important;
+    padding: 4px 12px !important;
     background-color: #ffffff !important;
     color: #000000 !important;
     border: 1px solid #1f2937 !important;
-    border-radius: 0.25rem !important;
+    border-radius: 4px !important;
     font-weight: 500 !important;
 }
 
@@ -131,64 +137,64 @@
 
 .hosta11y-btn-active {
     outline: 2px solid #0055ff !important;
-
     box-shadow: 0 0 0 2px #ffffff !important;
 }
 
 .hosta11y-btn-theme-norm {
-    padding: 0.25rem 0.75rem !important;
+    padding: 4px 12px !important;
     background-color: #eaf2ff !important;
     color: #000000 !important;
     border: 1px solid #9ca3af !important;
-    border-radius: 0.25rem !important;
+    border-radius: 4px !important;
     font-weight: 500 !important;
 }
+
 .hosta11y-btn-theme-norm:hover {
     background-color: #ffffff !important;
 }
 
 .hosta11y-btn-theme-b {
-    padding: 0.25rem 0.625rem !important;
+    padding: 4px 10px !important;
     background-color: #ffffff !important;
     color: #000000 !important;
     border: none !important;
-    border-radius: 0.25rem !important;
+    border-radius: 4px !important;
     font-weight: 700 !important;
 }
 
 .hosta11y-btn-theme-ch {
-    padding: 0.25rem 0.625rem !important;
+    padding: 4px 10px !important;
     background-color: #000000 !important;
     color: #ffffff !important;
     border: none !important;
-    border-radius: 0.25rem !important;
+    border-radius: 4px !important;
     font-weight: 700 !important;
 }
 
 .hosta11y-btn-theme-g {
-    padding: 0.25rem 0.625rem !important;
+    padding: 4px 10px !important;
     background-color: #5ce1e6 !important;
     color: #000000 !important;
     border: none !important;
-    border-radius: 0.25rem !important;
+    border-radius: 4px !important;
     font-weight: 700 !important;
 }
 
 .hosta11y-btn-theme-k {
-    padding: 0.25rem 0.625rem !important;
+    padding: 4px 10px !important;
     background-color: #7a4117 !important;
     color: #22c55e !important;
     border: none !important;
-    border-radius: 0.25rem !important;
+    border-radius: 4px !important;
     font-weight: 700 !important;
 }
 
 .hosta11y-btn-sans, .hosta11y-btn-serif {
-    padding: 0.25rem 0.75rem !important;
+    padding: 4px 12px !important;
     background-color: #ffffff !important;
     color: #000000 !important;
     border: 1px solid #1f2937 !important;
-    border-radius: 0.25rem !important;
+    border-radius: 4px !important;
 }
 
 .hosta11y-btn-serif {
@@ -199,57 +205,62 @@
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    padding: 4px 7px !important;
 }
 
 .hosta11y-img-icon {
-    width: 1rem !important;
-    height: 1rem !important;
+    width: 16px !important;
+    height: 16px !important;
     background-color: #374151 !important;
     display: block !important;
-    border-radius: 0.125rem !important;
+    border-radius: 2px !important;
 }
 
-html.hosta11y-theme-b body *:not(#hosta11y-panel, #hosta11y-panel *, #hosta11y-toggle-btn, #hosta11y-toggle-btn *, #wpadminbar, #wpadminbar *)
+html.hosta11y-theme-b  *:not(#hosta11y-panel, #hosta11y-panel *, #hosta11y-toggle-btn, #hosta11y-toggle-btn *, #wpadminbar, #wpadminbar *)
 {
     background-color: #ffffff !important;
+    background-image: linear-gradient(#ffffff,#ffffff) !important;
     color: #000000 !important;
-    border-color: rgba(0, 0, 0, 0.67) !important; }
+    border-color: rgba(0, 0, 0, 0.67) !important;
+}
 
-html.hosta11y-theme-b body *:not(#hosta11y-panel, #hosta11y-panel *, #wpadminbar, #wpadminbar *):focus-visible {
+html.hosta11y-theme-b  *:not(#hosta11y-panel, #hosta11y-panel *, #hosta11y-toggle-btn, #wpadminbar, #wpadminbar *):focus-visible {
     outline: 2px solid rgba(0, 0, 0, 0.67) !important;
 }
 
-html.hosta11y-theme-ch body *:not(#hosta11y-panel, #hosta11y-panel *, #hosta11y-toggle-btn, #hosta11y-toggle-btn *, #wpadminbar, #wpadminbar *)
+html.hosta11y-theme-ch  *:not(#hosta11y-panel, #hosta11y-panel *, #hosta11y-toggle-btn, #hosta11y-toggle-btn *, #wpadminbar, #wpadminbar *)
 {
     background-color: #000000 !important;
+    background-image: linear-gradient(#000000,#000000) !important;
     color: #ffffff !important;
     border-color: rgba(255, 255, 255, 0.67) !important;
 }
 
-html.hosta11y-theme-ch body *:not(#hosta11y-panel, #hosta11y-panel *, #wpadminbar, #wpadminbar *):focus-visible {
+html.hosta11y-theme-ch  *:not(#hosta11y-panel, #hosta11y-panel *, #hosta11y-toggle-btn, #wpadminbar, #wpadminbar *):focus-visible {
     outline: 2px solid rgba(255, 255, 255, 0.67) !important;
 }
 
-
-html.hosta11y-theme-g body *:not(#hosta11y-panel, #hosta11y-panel *, #hosta11y-toggle-btn, #hosta11y-toggle-btn *, #wpadminbar, #wpadminbar *)
+html.hosta11y-theme-g  *:not(#hosta11y-panel, #hosta11y-panel *, #hosta11y-toggle-btn, #hosta11y-toggle-btn *, #wpadminbar, #wpadminbar *)
 {
     background-color: #9dd1ff !important;
+    background-image: linear-gradient(#9dd1ff,#9dd1ff) !important;
     color: #195183 !important;
     border-color: rgba(25, 81, 131, 0.67) !important;
 }
 
-html.hosta11y-theme-g body *:not(#hosta11y-panel, #hosta11y-panel *, #wpadminbar, #wpadminbar *):focus-visible {
+html.hosta11y-theme-g *:not(#hosta11y-panel, #hosta11y-panel *, #hosta11y-toggle-btn, #wpadminbar, #wpadminbar *):focus-visible {
     outline: 2px solid #3479ff !important;
 }
 
-html.hosta11y-theme-k body *:not(#hosta11y-panel, #hosta11y-panel *, #hosta11y-toggle-btn, #hosta11y-toggle-btn *, #wpadminbar, #wpadminbar *)
+html.hosta11y-theme-k *:not(#hosta11y-panel, #hosta11y-panel *, #hosta11y-toggle-btn, #hosta11y-toggle-btn *, #wpadminbar, #wpadminbar *)
 {
     background-color: #3b2716 !important;
+    background-image: linear-gradient(#3b2716,#3b2716) !important;
     color: #a9e44d !important;
     border-color: rgba(169, 228, 77, 0.67) !important;
 }
 
-html.hosta11y-theme-k body *:not(#hosta11y-panel, #hosta11y-panel *, #wpadminbar, #wpadminbar *):focus-visible {
+html.hosta11y-theme-k  *:not(#hosta11y-panel, #hosta11y-panel *, #hosta11y-toggle-btn, #wpadminbar, #wpadminbar *):focus-visible {
     outline: 2px solid #a9e44d !important;
 }
 
@@ -260,14 +271,19 @@ html.hosta11y-theme-b body a:not(#hosta11y-panel, #hosta11y-panel *, #wpadminbar
 {
     text-decoration: underline !important;
 }
-html.hosta11y-theme-ch body a:not(#hosta11y-panel, #hosta11y-panel *, #wpadminbar, #wpadminbar *),
-html.hosta11y-theme-b body a:not(#hosta11y-panel, #hosta11y-panel *, #wpadminbar, #wpadminbar *)
+
+html.hosta11y-theme-ch body img:not(#hosta11y-panel, #hosta11y-panel *, #wpadminbar, #wpadminbar *),
+html.hosta11y-theme-b body img:not(#hosta11y-panel, #hosta11y-panel *, #wpadminbar, #wpadminbar *)
 {
     filter: grayscale(100%) !important;
+
 }
 
-html body *:not(#hosta11y-panel, #hosta11y-panel *, #hosta11y-toggle-btn, #hosta11y-toggle-btn *, #wpadminbar, #wpadminbar *) {
+html[style*="--hosta11y-letter-spacing"] body *:not(#hosta11y-panel, #hosta11y-panel *, #hosta11y-toggle-btn, #hosta11y-toggle-btn *, #wpadminbar, #wpadminbar *) {
     letter-spacing: var(--hosta11y-letter-spacing) !important;
+}
+
+html.hosta11y-custom-line-height body *:not(#hosta11y-panel, #hosta11y-panel *, #hosta11y-toggle-btn, #hosta11y-toggle-btn *, #wpadminbar, #wpadminbar *) {
     line-height: var(--hosta11y-line-height) !important;
 }
 
@@ -277,6 +293,69 @@ html.hosta11y-font-serif body *:not(#hosta11y-panel, #hosta11y-panel *, #wpadmin
 
 html.hosta11y-hide-images figcaption,
 html.hosta11y-hide-images img:not(#hosta11y-panel img, #hosta11y-toggle-btn img, #wpadminbar img),
-html.hosta11y-hide-images [style*="background-image"] {
+html.hosta11y-hide-images [style*="background-image"]{
     display: none !important;
+}
+
+html.hosta11y-hide-images .hosta11y-img-icon{
+    opacity: 0.05 !important;
+}
+
+
+html.hosta11y-custom-font-size body *:not(#hosta11y-panel, #hosta11y-panel *, #hosta11y-toggle-btn, #hosta11y-toggle-btn *, #wpadminbar, #wpadminbar *) {
+    font-size: calc(1em * var(--hosta11y-font-scale)) !important;
+}
+
+.hosta11y-reset-top-btn {
+    position: fixed !important;
+    top: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) translateY(-100%) !important;
+    z-index: 999997 !important;
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    padding: 1px 16px 1px 16px!important;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-bottom-left-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+    cursor: pointer !important;
+    margin: 0 !important;
+}
+
+
+.hosta11y-reset-top-btn.hosta11y-active {
+    transform: translateX(-50%) translateY(0) !important;
+}
+
+
+body.admin-bar .hosta11y-reset-top-btn.hosta11y-active {
+    transform: translateX(-50%) translateY(32px) !important;
+}
+
+.hosta11y-reset-top-btn:hover {
+    background-color: #222222 !important;
+}
+
+.hosta11y-toggle-icon__hidden{
+    display: none;
+}
+
+
+@media all and (max-width: 1380px) {
+
+    .hosta11y-toggle-btn{
+        top: 100px !important;
+    }
+    .hosta11y-toggle-btn__opened {
+        top: 10px !important;
+        right: calc(50% - 30px) !important;
+    }
+
+    .hosta11y-panel__opened{
+        padding-top:65px !important;
+    }
 }
